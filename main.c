@@ -16,17 +16,15 @@ int main()
 	head->next = second; // Link first node with 
 	second->data = 2; 
 	second->next = third; 
-    third->data = 3; // assign data to third node 
+        third->data = 3; // assign data to third node 
 	third->next = NULL; 
-	void printList(struct Node* n) 
+void printList(struct Node* n) 
 { 
     while (n != NULL) { 
         printf("%d-->", n->data); 
         n = n->next; 
     } 
 }
-    printList(head);
-
-  
-	return 0; 
+   printList(head);
+  return 0; 
 } 
